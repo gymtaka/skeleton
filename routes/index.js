@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var http = require('http').Server(express);
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(http);
 
 router.get('/', function(req, res){
   res.render('index',
